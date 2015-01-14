@@ -8,8 +8,8 @@
 $border-box-sizing: true !default;
 
 /* media queries */
-$tablet: new-breakpoint(min-width 501px max-width 1080px 4);
-$mobile: new-breakpoint(max-width 500px 2);
+$tablet: new-breakpoint(max-width 391px 4);
+$mobile: new-breakpoint(max-width 390px 1);
 
 
 .wrapper {
@@ -21,10 +21,14 @@ $mobile: new-breakpoint(max-width 500px 2);
   @include span-columns(4);
 
   @include media($tablet) {
-    @include span-columns(4);
-       }
+    @include span-columns(2);
+  }
 
   @include media($mobile) {
-    @include span-columns(2);
-         }
+    @include span-columns(1);
+  }
+}
+
+img {
+  max-width: 100%;
 }

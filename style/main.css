@@ -29,21 +29,24 @@ html {
   width: 31.76157%; }
   .food:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 501px) and (max-width: 1080px) {
+  @media screen and (max-width: 391px) {
     .food {
       float: left;
       display: block;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 46.28851%; }
       .food:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 390px) {
     .food {
       float: left;
       display: block;
-      margin-right: 16.03631%;
+      margin-right: 38.19821%;
       width: 100%; }
       .food:last-child {
         margin-right: 0; } }
+
+img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
