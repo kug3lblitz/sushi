@@ -1,0 +1,30 @@
+@import 'bourbon/bourbon';
+/* \$visual-grid: true;
+\$visual-grid-color: #0cb9e6;
+\$visual-grid-size: 1600px; */
+@import 'neat/neat';
+
+
+$border-box-sizing: true !default;
+
+/* media queries */
+$tablet: new-breakpoint(min-width 501px max-width 1080px 4);
+$mobile: new-breakpoint(max-width 500px 2);
+
+
+.wrapper {
+  @include outer-container;
+  margin-top: 250px;
+}
+
+.food {
+  @include span-columns(4);
+
+  @include media($tablet) {
+    @include span-columns(4);
+       }
+
+  @include media($mobile) {
+    @include span-columns(2);
+         }
+}
